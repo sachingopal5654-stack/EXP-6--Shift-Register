@@ -41,10 +41,9 @@ endmodule
 
 ```
 Testbench Program
-
+```
 // gedit tb6.v
-
-
+ 
 module tb6;
     reg  clk, rst, sin;
     wire sout;
@@ -92,8 +91,9 @@ module tb6;
  
         #20 $finish;
     end
-    endmodule
+endmodule
 
+```
 ## Operation / Truth Table
 
 Register contents after each active clock edge (sin sequence = 1, 0, 1, 1)
@@ -150,7 +150,7 @@ Q(next) = {Q[2:0], sin}
 The design was compiled and simulated using Synopsys VCS, and the functionality was verified using DVE waveform analysis, matching the expected operation table.
 
 ## Output
-<img width="591" height="181" alt="image" src="https://github.com/user-attachments/assets/f27135f4-6a61-4a44-a099-9be11f7cd54b" />
+<img width="1916" height="1077" alt="experiment-6" src="https://github.com/user-attachments/assets/097ecd34-a39c-4d2e-840e-4bea0a2945c1" />
 
 ## Viva-Voce Questions
 
